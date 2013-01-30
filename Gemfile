@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
+gem 'bootstrap-sass', '2.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -31,6 +32,10 @@ group :test do
   gem 'capybara', '1.1.2'
   gem 'rb-fsevent', '0.9.1', :require => false
   gem 'growl', '1.0.3'
+  gem 'rb-inotify', '0.8.8'
+  gem 'libnotify', '0.5.9'
+  gem 'guard-spork', '1.2.0'
+  gem 'spork', '0.9.2'
 end
 
 group :production do
