@@ -32,7 +32,7 @@ group :test do
   gem 'capybara', '1.1.2'
   gem 'growl', '1.0.3'
   gem 'libnotify', '0.5.9'
-  gem 'guard-spork', '1.2.0'
+  gem 'guard-spork', :github => 'guard/guard-spork'
   gem 'spork', '0.9.2'
 end
 
