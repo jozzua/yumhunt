@@ -47,6 +47,16 @@ describe User do
         @user.should be_valid
       end      
     end
-
   end
+
+
+  describe "when email is already taken" do
+    before do
+      userwdupemail = @user.dup
+      userwdupemail.email = @user.email.upcase
+      userwdupemail.save
+    end
+    it { should_not be_valid }
+  end
+
 end
