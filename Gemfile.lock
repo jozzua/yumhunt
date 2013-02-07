@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/guard/guard-spork.git
-  revision: 889e2d97b09b330744021b6610318e0b9ebd5779
+  revision: 2200667b5ee4090acc5d19c4ea5fc736411a2c81
   specs:
-    guard-spork (1.4.1)
+    guard-spork (1.4.2)
       childprocess (>= 0.2.3)
       guard (>= 1.1)
       spork (>= 0.8.4)
