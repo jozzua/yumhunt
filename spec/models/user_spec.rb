@@ -67,4 +67,21 @@ describe User do
     it { should_not be_valid }
   end
 
+  describe "when password do not match" do
+    before {@user.password = "mismatch"}
+    it {should_not be_valid }
+  end
+
+  describe "when password confirmation is empty" do
+    before {@user.password_confirmation = nil}
+    it {should_not be_valid }
+  end
+
+  it { should respond_to(:authenticate)}
+
+  describe "password too short" do
+    before {@user.password=@user.password_confirmation ="a"*5}
+    it { should be_invalid}
+  end 
+  
 end
