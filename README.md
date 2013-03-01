@@ -1,4 +1,5 @@
-# YumHunt
+YumHunt
+=======
 
 A food hunt game.
 
